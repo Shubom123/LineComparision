@@ -16,11 +16,15 @@ length2 = Math.sqrt( (u2 - u1) ^ 2 + (v2- v1) ^ 2);
 System.out.println("lenght of second line: " + length2);
 String s1 = Double.toString(length1);
 String s2 = Double.toString(length2);
-if (s1.equals(s2)){
+double check = s1.compareTo(s2);
+if (check == 0){
 System.out.println("The two lines are equal");
 }
+else if(check < 0.0){
+System.out.println("Line1 is smaller than Line2");
+}
 else{
-System.out.println("The two lines are not equal");
+System.out.println("Line1 is greater than Line2");
 }
 }
 }
